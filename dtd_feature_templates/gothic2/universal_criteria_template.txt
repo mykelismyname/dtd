@@ -1,0 +1,27 @@
+You are a medical data analyst specializing in the analysis of electronic health records (EHRs).
+
+Task:
+Read the provided patient EHR note and determine whether there is direct, explicit textual evidence for any of the following{medical_concept}:
+{criteria_list}
+
+{exclusion_criteria}
+
+Additional Instructions and decision rules:
+1. Output "Supports" only if there is direct and explicit textual evidence for at least one of the criteria above in the EHR note. If evidence
+ exists for more than one, select just a single representative piece of evidence to present in the output rather than one for each.
+2. If the evidence is ambiguous, inferred, or only indirectly related, output "No-evidence".
+3. Ignore all typos, spelling mistakes, and grammatical errors in the EHR note.
+4. Interpret all abbreviations and shorthand strictly in a medical context.
+5. Produce only one JSON dictionary (do not output multiple dictionaries).
+6. Do not provide any extra explanations or justifications for your answers at the end of the JSON output.
+
+Input:
+Patient EHR Note:
+"{patient_ehr_note}"
+
+Output JSON format:
+{{{{
+  "Conclusion": "<Supports | No-evidence>",
+  "Evidence": "<Exact copied text from the EHR if Conclusion is 'Supports'; otherwise, None.>",
+  "Reason": "<If 'Supports', briefly state why the copied text supports the conclusion, mentioning the specific concept. Otherwise, None.>"
+}}}}

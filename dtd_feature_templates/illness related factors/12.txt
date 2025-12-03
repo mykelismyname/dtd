@@ -1,0 +1,18 @@
+"""
+As an expert medical knowledge assistant capable of analysing electronic health records. Given a patient electronic health record (EHR) below:"
+
+{patient_ehr_note}
+
+"Determine whether the patient has comorbid panic disorder indicated by severe anxiety or panic which are not restricted to any particular situation or set of circumstances and are therefore unpredictable."
+"Respond with one of the following:"
+   "Supports: To indicate that there is evidence of comorbid panic disorder with symptoms such as sudden onset of palpitations, chest pain, choking sensations, dizziness, and feelings of depersonalization or derealization."
+   "Refutes: To indicate that there is evidence against comorbid panic disorder i.e. without symptoms such as sudden onset of palpitations, chest pain, choking sensations, dizziness, and feelings of depersonalization or derealization."
+   "No evidence: To indicate there is no evidence in the EHR supporting or refuting cormobid panic disorder i.e. nothing suggests symptoms such as sudden onset of palpitations, chest pain, choking sensations, dizziness, and feelings of depersonalization or derealization."
+"If your conclusion is 'Supports' or 'Refutes', provide the specific text or passage from the EHR that justifies your conclusion."
+"Do not provide any extra details to support your response."
+"Return your response in JSON format, with the structure below"
+{{
+	"Conclusion": "Supports/Refutes/No evidence",
+	"Evidence": "Evidence text or passage is applicable (only required for Supports 'Supports' or 'Refutes')"
+}}
+"""             

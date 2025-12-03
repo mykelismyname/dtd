@@ -1,0 +1,23 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": "",
+  "criteria_list": [
+    "The patient being allergic to hyoscine hydrobromide.",
+    "The patient being allergic to glycopyrrolate."
+  ],
+  "exclusion_criteria": "",
+  "examples": [
+  {
+    "patient_ehr_note": "Face to face encounter regarding GOTHIC2 study. Myself and Gladys met with Chris at home today at 15:15 to complete the week 12 assessments, including CANTAB, PSP and PANSS. Chris completed all assessments, and 25 love2shop voucher was provided (patient signed receipt for this voucher) Chris reported partial adherence to trial medication (1 tablet three times daily). Chris often forgets to take the 2nd tablet of the day typically around lunch time when he is out of the house. we couldn't 63 left over capsules. I highlighted the importance of taking the medication as prescribed and Chris understood well. Patient is taking clozapine as normal, and dose has not changed since last contact. Safety checks completed. Chris reported no side effect. Chris has not been admitted to hospital since last contact. Deemed to have capacity throughout. Chris stated that they would like to continue the trial allocated treatment, if possible. No intolerable side effects reported. Chris was unblinded using the planned unblinding forms of REDCap. Allocation from randomisation form: Glycopyrrolate Chris had been randomised into the glycopyrrolate arm and expressed interest in open label phase participation. Open label phase discussed in detail. Chris demonstrated capacity and understanding, what it involved for them, and was encouraged to ask any questions. Chris understood the information provided and agreed to proceed to the consent form. PIS-Open Label (V2.0) discussed and Open Label Consent form (V2.0) completed by participant and countersigned by myself. Consent form uploaded to REDCap and RIO notes. Email to study doctor to organise short term prescription of allocated treatment. Open label follow up appointment to be arranged. Chris understood the plan.",
+    "Conclusion": "No-evidence",
+    "Evidence": "None",
+    "Reason": "None"
+  },
+  {
+    "patient_ehr_note": "Following MDT Meeting and update from CPN: Mr XXXX is still experiencing positive symptoms and we have not yet reached approx. 450mg which was the initial target dose. Increased Clozapine to total 350mg (50mg Mane and 300mg Nocte) Increased Hyoscine hydrobromide 350mcg TDS Prescription completed and sent to Pharmacy.",
+    "Conclusion": "No-evidence",
+    "Evidence": "None",
+    "Reason": "None"
+  }
+]
+}

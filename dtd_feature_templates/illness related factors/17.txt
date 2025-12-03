@@ -1,0 +1,18 @@
+"""
+As an expert medical knowledge assistant capable of analysing electronic health records. Given a patient electronic health record (EHR) below:"
+
+{patient_ehr_note}
+
+"Determine whether the patient has a strong desire (or difficulty controlling) to use substances, drugs, or alcohol, persists in using them despite harmful consequences, prioritizes drug use over other activities and obligations, exhibits increased tolerance, and experiences physical withdrawal."
+"Respond with one of the following:"
+   "Supports: To indicate that there is evidence of one or more of these struggles."
+   "Refutes: To indicate that there is evidence against one or more of these struggles."
+   "No evidence: To indicate there is no evidence support or refuting one or more of these struggles."
+"If your conclusion is 'Supports' or 'Refutes', provide the specific text or passage from the EHR that justifies your conclusion."
+"Do not provide any extra details to support your response."
+"Return your response in JSON format, with the structure below"
+{{
+	"Conclusion": "Supports/Refutes/No evidence",
+	"Evidence": "Evidence text or passage is applicable (only required for Supports 'Supports' or 'Refutes')"
+}}
+"""             

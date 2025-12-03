@@ -1,0 +1,18 @@
+"""
+As an expert medical knowledge assistant capable of analysing electronic health records. Given a patient electronic health record (EHR) below:"
+
+{patient_ehr_note}
+
+"Determine whether the patient suffers from severe depressive episodes (e.g. mood symptoms, depression etc)."
+"Respond with one of the following:"
+   "Supports: To indicate that there is evidence of severe depressive episodes in the EHR."
+   "Refutes: To indicate that there is evidence against severe depressive episodes in the EHR."
+   "No evidence: To indicate there is no evidence in the EHR supporting or refuting severe depressive episodes."
+"If your conclusion is 'Supports' or 'Refutes', provide the specific text or passage from the EHR that justifies your conclusion."
+"Do not provide any extra details to support your response."
+"Return your response in JSON format, with the structure below"
+{{
+	"Conclusion": "Supports/Refutes/No evidence",
+	"Evidence": "Evidence text or passage that is applicable"
+}}
+"""             

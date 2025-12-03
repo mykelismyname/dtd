@@ -1,0 +1,10 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": "",
+  "criteria_list": [
+    "The patient has been prescribed clozapine for a minimum of three months.",
+    "The patient attends a clozapine clinic."
+  ],
+  "exclusion_criteria": "When extracting evidence, do not consider mentions of the following treatments as evidence, even if they are present:\n- Depot\n- Clopixol\n- Long-acting injectable/injection",
+  "examples": []
+}

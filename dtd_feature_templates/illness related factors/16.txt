@@ -1,0 +1,18 @@
+"""
+As an expert medical knowledge assistant capable of analysing electronic health records. Given a patient electronic health record (EHR) below:"
+
+{patient_ehr_note}
+
+"Determine whether the patient has medical illnesses such as endocrine disorders, diabetes, neurological disorders, cancers, connective tissue disorders, vitamin deficiency, viral infections, obesity / metabolic syndrome, coronary heart disease, pain disorders."
+"Respond with one of the following:"
+   "Supports: To indicate that there is evidence of one or more of these medical illnesses."
+   "Refutes: To indicate that there is evidence against one or more of these medical illnesses."
+   "No evidence: To indicate there is no evidence support or refuting one or more of these medical illnesses."
+"If your conclusion is 'Supports' or 'Refutes', provide the specific text or passage from the EHR that justifies your conclusion."
+"Do not provide any extra details to support your response."
+"Return your response in JSON format, with the structure below"
+{{
+	"Conclusion": "Supports/Refutes/No evidence",
+	"Evidence": "Evidence text or passage is applicable (only required for Supports 'Supports' or 'Refutes')"
+}}
+"""             

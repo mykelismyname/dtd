@@ -1,0 +1,9 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": "",
+  "criteria_list": [
+    "The patient is participating in any other clinical drug study or trial besides Gothic2."
+  ],
+  "exclusion_criteria": "",
+  "examples": []
+}

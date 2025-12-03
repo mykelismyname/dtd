@@ -1,0 +1,69 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": "",
+  "criteria_list": [
+    "Gastroesophageal reflux disease",
+    "Water brash",
+    "Gastroparesis",
+    "Pancreatitis",
+    "Liver disease",
+    "Sjogren syndrome",
+    "Motor neuron disease",
+    "Myasthenia gravis",
+    "Parkinson's disease",
+    "Multiple system atrophy",
+    "Facial nerve palsy",
+    "Hypoglossal nerve palsy"
+  ],
+  "exclusion_criteria": "",
+  "examples": [
+    {
+      "patient_ehr_note": "OPA review Plan (discussed with Dr Claxton) Routine review in 4 months Patient to see GP regarding his dyspepsia and occasional chest pain symptoms. ecomms to GP sent to inform of symptoms. To offer procyclidine 2.5mg TDS with his clozapine prescriptions.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Attended home address as planned. Jason advised he has been regular going to toilet . On further questioning usually would go the toilet every 2 days but has been every three days, reporting his stools remain hard but not painful and does not reports any bleeding. Jason advised he ahs been taking all laxative, stool softeners as prescribed . Jason has advised today that he has noted a therapeutic effect that Clozapine has had and describes positive symptoms are less than before starting. However Jason reports continued excessive salivation even with Kwells, advised they don't work. He advised stiffness in jaw also . Have explained I will discuss in MDTM and will feed back to Jason possibly Friday.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Community Clozapine Titration Team Day 11 - Post-Dose visit @ 11:30am Scheduled visit at Rachael s address Rachel welcomed us into her home Rachel reports feeling well Rachael still hasn t opened her bowels since pre dose visit. Paperwork returned to CV Medication to be stored in home address. Shift lead to send email regarding another additional laxative Side Effects: Rachael denied experiencing any chest pains, palpitations, breathlessness, and/or flu-like symptoms. Rachael reports to have her bowels opened 17/02/25. Physical Observations: BP (sitting): 122/78 BP (standing): 115/72 Pulse: 96 Temp: 36.2 Resps: 16 Sats: 97% ACVPU: A NEWS2: 1/1 Side Effects: Sedation Yes - Mild Hypersalivation Yes - Mild Dizziness No Nausea / Vomiting No Sweating No. Palpitations No. Dry Mouth Yes. Advice given. Urine Problems No Tremor Yes slight but unwitnessed by staff. Visual Problems No. Involuntary Movements No Rigidity No. Flu-like Symptoms No. Breathlessness No. Chest Pains No. Plan: Visit Rachael s home address tomorrow.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Community Clozapine Titration Team: Post-Dose Visit: Gemine/Esther Day 12 Attended Jason s friend s address with my colleauge H.Vaughan. Jason welcomed us into the living space. Jason reported feeling mild sedation following this mornings medication, Jason was asked if he is experiencing any dizziness, he reported only from seating to standing and this passess rather quickly. Jason was observed hypersalivating at times during conversation, he was asked if this is bothering him, Jason reports he has mild hypersalivation of a night time but this is starting to happen during the day, CCTT to continue to monitor and offer Hyoscine if this worsens. Jason opened his bowels following this mornings visit, he reports this was soft and easy to pass. Physical Observations: B/P sitting 138/80 B/P standing 130/84 Pulse 90 Temp 36.4 Resps 17 Sats 99% ACVPU- A NEWS2: 0/0 no overt signs of psychosis displayed. Side Effects: Sedation drowsy Hypersalivation Yes Mild Dizziness yes, on standing Nausea / Vomiting No Sweating No. Palpitations No. Dry Mouth No Urine Problems No. Tremor No. Visual Problems No. Involuntary Movements No Rigidity No. Flu-like Symptoms No. Breathlessness No. Chest Pains No. Constipation No. Bowels opened today. Plan: CCTT to visit this evening for medication drop off.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Clozapine Monitoring Clinic Broadoak Health Wellbeing Clinic Attended today for Clozapine Monitoring. No covid symptoms reported Adele verbally consented for a blood sample to be taken Blood sample ran through POCHI machine and CPMS have given green result. Annual bloods completed Verbal consent given for a physical health assessment GASS side effect assessment scale which can be viewed in the Clozapine Clinic Monitoring form under general assessments in Rio. Adele has collected 4X weeks of medication. Side Effects Feels drowsy at times. Reports having a tremor, non noticed or observed, Adele puts this down to her anxiety. Adele reported she is going to Bangkok tomorrow with her family for 2 weeks Next OPA 25/04/2023 at 08:00.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Attended home address accompanied with colleague Jo Henry. Jason appeared to be settled in presentation, although he stated he had a PRN 5mg diazepam last night before bed. Jason appears to have been managing blister pack appropriately and remains compliant. He has provided me with all his old medications to return to Pharmacy but I have left him with Kemadrin medication. I have advised Jason the weekend staff will see him tomorrow and again on Sunday to minimise risk of relapse during reducing medication. Clozapine team will see him at home. Weekend staff to visit at 152 Goodison road telephone number 01512847662 / Friends Gemma home who will be supporting Jason during clozapine titration. Denies harm to self others plan or intent at the time of contact today . No other issues or concerns reported or observed at the time of our contact today .",
+      "Conclusion": "Supports",
+      "Evidence": "I have left him with Kemadrin medication",
+      "Reason": "The note mentions that the patient has been left with Kemadrin (procyclidine), which is an anticholinergic medication typically prescribed to treat Parkinson’s disease or Parkinsonism (often drug-induced, e.g., from antipsychotics like clozapine)."
+    },
+    {
+      "patient_ehr_note": "Dean attended the health and wellbeing clinic in Broadoak today for routine clozapine monitoring. Covid screening completed and no symptoms noted or reported. Staff wore PPE as per current guidance. Verbal consent received to complete routine clozapine monitoring and obtain blood sample. FBC obtained and GREEN result received via the POCHI machine. Raised WCC and NEUT noted when sample run through the POCHI machine. He reported a slight cough, but nothing else. Sample forwarded to the local lab for confirmation, if confirmed raised to forward to the Gp with an accompanying letter for review. GAS form completed. Mild hypersalivation: on Hyoscine to help with this. Observations completed. Drop in Bp when standing, but asymptomatic. Collected x4 weeks supply of Clozapine from clinic. Next OPA for bloods arranged for the 13th February at 11am.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Consent gained Clozapine Monitoring @ Clock View Hospital Mark attended clinic he gave a blood sample which has been processed in the pocH-100i analyser. CPMS have given their GREEN light to continue with treatment. Next appointment 22/11/23 @ 1pm Tablets collected blister packs x 4/52 See Clozapine clinic form in general assessments for a breakdown of physical health assessments. Bowels opened yesterday, normal and soft to pass, no laxatives required, opens bowels on a regular basis. Side effects, Moderate sedation/drowsy after taking medication. Mild hypersalivation, has Pirenzepine which is helping this. Dizziness at times when he stands, advice given. Dry mouth, encouraged to take sips of water on a regular basis or have some mints. Tremor which is not to bad at this time. RESPs 13 NEWS2 score 2BP standing 102/69 PR 95bpm NEWS2 score 2 BP sitting 98/65, Mark reports to feel well, no reports of palpitations, no chest pain, constant with other readings. ECG completed today.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    }
+  ]
+}

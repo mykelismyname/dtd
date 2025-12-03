@@ -1,0 +1,10 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": "",
+  "criteria_list": [
+    "The patient cannot speak English.",
+    "The patient requires a translator or interpreter."
+  ],
+  "exclusion_criteria": "When extracting evidence, you must:\n- Ignore any language status inferred from appointment modifications, missed visits or references solely to non-verbal communication.\n- Only consider explicit statements and not implications or inferences.",
+  "examples": []
+}

@@ -1,0 +1,10 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": "",
+  "criteria_list": [
+    "Severe renal impairment",
+    "Kidney failure"
+  ],
+  "exclusion_criteria": "",
+  "examples": []
+}

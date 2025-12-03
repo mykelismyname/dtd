@@ -1,0 +1,16 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": " Conditions or symptoms",
+  "criteria_list": [
+    "The patient is experiencing hypersalivation with a minimum score of 4 on the Drooling Rating Scale (DRS).",
+    "Drooling",
+    "Excess salivation",
+    "Hypersaliorrhea",
+    "Slobbering",
+    "Dribbling",
+    "Clozapine-induced hypersalivation",
+    "Wet or wetting pillow"
+  ],
+  "exclusion_criteria": "When extracting evidence, do not consider mention of wet or wetting that is not in the context of salivation.",
+  "examples": []
+}

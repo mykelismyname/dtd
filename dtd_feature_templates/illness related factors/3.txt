@@ -1,0 +1,18 @@
+"""
+As an expert medical knowledge assistant capable of analysing electronic health records. Given a patient electronic health record (EHR) below:"
+
+{patient_ehr_note}
+
+"Determine whether the patient's struggles with mental illness (e.g. mood symptoms, depression etc) started after the age of 60 (sixty)."
+"Respond with one of the following:"
+   "Supports: To indicate that there is evidence of mental illness after the age of 60 in the EHR."
+   "Refutes: To indicate that there is evidence against mental illness after the age of 60 in the EHR."
+   "No evidence: To indicate there is no evidence in the EHR supporting or refuting mental illness after the age of 60."
+"If your conclusion is 'Supports' or 'Refutes', provide the specific text or passage from the EHR that justifies your conclusion."
+"Do not provide any extra details to support your response."
+"Return your response in JSON format, with the structure below"
+{{
+	"Conclusion": "Supports/Refutes/No evidence",
+	"Evidence": "Evidence text or passage that is applicable"
+}}
+"""             

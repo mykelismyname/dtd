@@ -1,0 +1,18 @@
+"""
+As an expert medical knowledge assistant capable of analysing electronic health records. Given a patient electronic health record (EHR) below:"
+
+{patient_ehr_note}
+
+"Determine whether the patient has a fear of scrutiny by others, leading to avoidance of social situations, with anxiety symptoms such as blushing, hand tremor, nausea, or urinary urgency/frequency occurring only in social situations."
+"Respond with one of the following:"
+   "Supports: To indicate that there is evidence of this condition."
+   "Refutes: To indicate that there is evidence against this condition."
+   "No evidence: To indicate there is no evidence support or refuting this condition."
+"If your conclusion is 'Supports' or 'Refutes', provide the specific text or passage from the EHR that justifies your conclusion."
+"Do not provide any extra details to support your response."
+"Return your response in JSON format, with the structure below"
+{{
+	"Conclusion": "Supports/Refutes/No evidence",
+	"Evidence": "Evidence text or passage is applicable (only required for Supports 'Supports' or 'Refutes')"
+}}
+"""             

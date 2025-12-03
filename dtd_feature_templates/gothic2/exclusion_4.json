@@ -1,0 +1,46 @@
+{
+  "patient_ehr_note": "{patient_ehr_note}",
+  "medical_concept": " conditions",
+  "criteria_list": [
+    "Angle-closure glaucoma",
+    "Gastro-intestinal obstruction",
+    "Intestinal atony",
+    "Myasthenia gravis",
+    "Paralytic ileus",
+    "Pyloric stenosis",
+    "Severe ulcerative colitis"
+  ],
+  "exclusion_criteria": "When extracting evidence, do not consider mention or use any of hyoscine, glycopyrrolate, constipation, and pirenzepine as evidence of the above specified conditions.",
+  "examples": [
+    {
+      "patient_ehr_note": "Clozapine Titration Team Contacted Westminster Medical Centre to request for an urgent GP review (due to no bowel movement since 14/06 and abdominal discomfort). Advised by the receptionist that i would need to put my request in an email (gpn82049@nhs.net). Email has since been sent across.",
+      "Conclusion": "Supports",
+      "Evidence": "no bowel movement since 14/06 and abdominal discomfort",
+      "Reason": "The patient reports 'no bowel movement since 14/06 and abdominal discomfort', which is a strong indicator of gastro-intestinal obstruction or intestinal atony, or paralytic ileus. This supports the presence of a potential bowel obstruction issue."
+    },
+    {
+      "patient_ehr_note": "Consent gained Clozapine Monitoring @ Clock View Hospital Jen attended clinic she gave a blood sample which has been processed in the pocH-100i analyser. CPMS have given their GREEN light to continue with treatment. Next appointment 21/03/23 @ 1.30pm Tablets collected - Clozapine 100mgs x 56,25mgs x 28 See Clozapine clinic form in general assessments for a breakdown of physical health assessments. Jen informed the clinic she went to the toilet yesterday to have her bowels open, it was 'a little bit hard', asking her bowel habit she informed the clinic that she had not been for possibly three weeks, abdomen appeared quite hard to touch, she was also complaining of pain in the stomach area. Jen informed us she was sorry she had not told us before but she was worried we would tell her off. Reassured Jen this was not the case and spoke about how important it was to tell us about her bowels due to the medication she is on. All observations appear to be in normal range. I have advised Jen I will contact the GP ASAP and she may need to go and see them today or possibly attend AED, Jen is happy with this plan. I am currently on the phone to the GP surgery awaiting them to answer.",
+      "Conclusion": "Supports",
+      "Evidence": "she had not been for possibly three weeks, abdomen appeared quite hard to touch, she was also complaining of pain in the stomach area.",
+      "Reason": "The patient reports constipation (not having a bowel movement for three weeks), a hard abdomen, and stomach pain. This evidence supports gastro-intestinal obstruction, paralytic ileus, or intestinal atony as potential causes for the lack of bowel movement and abdominal discomfort."
+    },
+    {
+      "patient_ehr_note": "'Health and wellbeing Jessica attended the health and wellbeing clinic today for routine clozapine monitoring. Pleasant and polite throughout. Engaged well with staff. Taken a taxi for journey. She has a diagnosis of bilateral osteoarthritis of the knees. Awaiting a Knee replacement. Seeing surgeon on Monday. Lives with her friend. Known diabetic type 2 - prescribed and taking oral medication for this. Has regular diabetic monitoring via the Gp surgery Verbal consent received to complete routine side effect screening, observations and FBC blood sample. FBC obtained and GREEN result received via the POCHI Machine. GAS form completed. Mild hypersalivation at night/on Hyoscine tablets to help with this. Observations completed. RESP: 17 STANDING BP: Refused. NEWS2: 1/1 Elevated pulse rate: 97bpm regular in rate and rhythm. Denies palpitations, chest pain, shortness of breath or flu-like symptoms. Feeling well, no further action taken. Bowels opened last Thursday (4 th day today). Due to have manual enema administered by district nurses. Bowels were soft and east to pass. Prescribed: Phosphate enema (twice weekly) - administered by District nurse Regularly reviewed by the Gp in relation to bowel functioning. Bowel functioning has always been the same, even before Clozapine. Discussed signs of constipation, and if bowel habits change to liaise with Gp, due to risks of bowel obstruction. Collected x4 weeks supply of Clozapine from clinic. Next OPA for bloods arranged for the 7 th april 09:45.'",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Adele attended the health and wellbeing clinic in Broadoak today for routine clozapine monitoring. Verbal consent received to have clozapine observations and side effecting screening completed and for staff to obtain a blood sample for clozapine monitoring. FBC obtained and GREEN result received via CPMS GAS form completed Mild dry mouth reported- advised to maintain good fluid intake reported she was seen by the GP due to her finding it difficult to pass urine this month- reported this ha snow subsided and no further concerns. Resps 17 Slightly raised pulse: 102bpm, however Adele gets anxious when attending clinic. Bowels opened yesterday/ soft and easy to pass. NEWS2: 1 due to pulse 102bpm- denied any palpitations, chest pain, breathlessness or flu like symptoms Collected x4 weeks supply of Clozapine from clinic. Next OPA for bloods arranged for 6th December at 8am.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    },
+    {
+      "patient_ehr_note": "Jessica attended today's session as scheduled. Our session plan was to complete the problem solving booklet, but upon commencement we ended up having a review session as Jessica had a bad week. Jessica shared that the birthday party she had been worrying about during the previous session hadn't gone as planned. Jessica planned on her meal plan to have a set amount of food form the buffet but ended up having a lot more and felt guilty about this. She shared that she did not eat during the day before the party and we discussed how this may have influenced her eating during the party. Jessica also had a takeaway of rice and curry sauce on Monday night and felt that it was too much so mad herself sick and then had a full pack of biscuits. Other than these two occasions Jessica has been able to stick to her meal plan. Jessica has eaten a breakfast and lunch today which is something she would normally not do following her takeaway. we discussed how this was a positive and Jessica had not made her sick today which was another positive. Jessica talked about her anxiety over the last week and how this has influenced her eating and urges to binge. We discussed ways Jessica can distract herself during these binges. We also discussed ways Jessica can reduce her vomiting as she is currently making herself sick after every meal. we have planned for Jessica to split her meals up to avoid the feeling of fullness and to have more but smaller meals throughout the day. Jessica noted that she feels good that she has not vomited today and is going to try splitting up her meals to see if this affects her vomiting. Our next session is set for 2pm on 12/07.",
+      "Conclusion": "No-evidence",
+      "Evidence": "None",
+      "Reason": "None"
+    }
+  ]
+}

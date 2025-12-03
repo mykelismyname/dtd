@@ -1,0 +1,18 @@
+"""
+As an expert medical knowledge assistant capable of analysing electronic health records. Given a patient electronic health record (EHR) below:"
+
+{patient_ehr_note}
+
+"Determine whether the patient is over 60 years old."
+"Respond with one of the following:"
+   "Supports: To indicate that there is evidence in the EHR that the patient is over 60."
+   "Refutes: To indicate that there is evidence in the EHR that the patient is not over 60."
+   "No evidence: To indicate there is no evidence in the EHR to determine the patients age."
+"If your conclusion is 'Supports' or 'Refutes', provide the specific text or passage from the EHR that justifies your conclusion."
+"Do not provide any extra details to support your response."
+"Return your response in JSON format, with the structure below"
+{{
+	"Conclusion": "Supports/Refutes/No evidence",
+	"Evidence": "Evidence text or passage that is applicable"
+}}
+"""             
