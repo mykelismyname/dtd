@@ -1,0 +1,27 @@
+You are an expert medical assistant analysing a patient electronic health record (EHR).
+
+EHR:
+{ehr_text}
+
+Statement:
+{statement}
+
+The statement is an external claim about the patient described in the EHR.
+
+You must assess the truth of the statement based on the EHR and choose exactly one of the following outcomes:
+- "True": There is evidence in the EHR that the statement is true.
+- "False": There is evidence in the EHR that the statement is false.
+- "Unknown": The EHR does not contain enough information to determine whether the statement is true or false.
+
+Rules:
+- Choose exactly one of "True", "False", or "Unknown".
+- If the Direction field is "True" or "False", set the Evidence field to the specific quoted text or passage from the EHR that justifies your conclusion.
+- If you choose "Unknown", set the Evidence field to an empty string "".
+- Do not add any extra explanation outside the JSON.
+
+Return your answer as valid JSON with exactly this structure:
+
+{{
+    "Conclusion": "True" | "False" | "Unknown",
+    "Evidence": "Quoted text from the EHR or empty string"
+}}
