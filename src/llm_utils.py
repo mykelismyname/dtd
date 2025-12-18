@@ -7,7 +7,7 @@ def load_llm(
     load_in_4bit: bool = True,
 ):
     """
-    Load tokenizer and causal LM model.
+    Load tokenizer and LM model.
 
     Returns:
         tokenizer, model
