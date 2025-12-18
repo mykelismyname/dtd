@@ -1,0 +1,410 @@
+{
+    "version": "0.1",
+    "description": "DTD coding",
+    "factors": [
+        {
+            "label": "older_age",
+            "domain": "PATIENT_FACTOR",
+            "statement": "The patient is aged over 60 years.",
+            "task": "extract evidence that the patient is aged over 60 years",
+            "consensus_table": {
+                "depression_prognostic_factor": "Older age",
+                "domain": "Patient-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "family_mental_illness",
+            "domain": "PATIENT_FACTOR",
+            "statement": "The patient has a first-degree relative with a diagnosed mental illness (e.g., depression or bipolar affective disorder).",
+            "task": "extract evidence of mental illness in first-degree relatives, for example depression or bipolar affective disorder.",
+            "consensus_table": {
+                "depression_prognostic_factor": "Family history of affective disorders",
+                "domain": "Patient-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": "Risk for early onset, chronicity and non-response. Positive response to a medication by a family member may predict a response in the patient and vice versa"
+            },
+            "examples": []
+        },
+        {
+            "label": "personality_traits",
+            "statement": "The patient is described as having personality traits such as perfectionism, neuroticism, or anxiousness.",
+            "task": "extract evidence that the patient is described as having personality traits of perfectionism, neuroticism or anxiousness.",
+            "consensus_table": {
+                "depression_prognostic_factor": "Personality traits",
+                "domain": "Patient-related factors",
+                "odds_ratio": 3.4,
+                "strength_of_evidence": 3,
+                "comments": "High neuroticism; other associated personality traits (low extraversion, openness and conscientiousness)"
+            },
+            "examples": []
+        },
+        {
+            "label": "history_of_abuse",
+            "domain": "PATIENT_FACTOR",
+            "statement": "The patient has experienced one or more incidents or episodes of physical, emotional, or sexual abuse.",
+            "task": "extract evidence for incidents or episodes of physical or emotional or sexual abuse",
+            "consensus_table": {
+                "depression_prognostic_factor": "History of abuse",
+                "domain": "Patient-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": "History of physical, emotional and/or sexual abuse at any stage in life"
+            },
+            "examples": []
+        },
+        {
+            "label": "childhood_abuse",
+            "domain": "PATIENT_FACTOR",
+            "statement": "The patient experienced physical, emotional, sexual abuse or neglect during childhood or adolescence.",
+            "task": "extract evidence for incidents or episodes of physical, emotional, sexual abuse or *neglect* as a *child or teenager*",
+            "consensus_table": {
+                "depression_prognostic_factor": "Any childhood maltreatment",
+                "domain": "Patient-related factors",
+                "odds_ratio": 2.5,
+                "strength_of_evidence": 1,
+                "comments": "Any form of childhood maltreatment"
+            },
+            "examples": []
+        },
+        {
+            "label": "long_illness_duration",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "extract evidence that mood symptoms or \"depression\" problems have a long duration",
+            "consensus_table": {
+                "depression_prognostic_factor": "Duration of illness",
+                "domain": "Illness-related factors",
+                "odds_ratio": 2,
+                "strength_of_evidence": 1,
+                "comments": "A long duration of illness"
+            },
+            "examples": []
+        },
+        {
+            "label": "illness_early_onset",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "The patient's mood symptoms or depression began before the age of eighteen.",
+            "task": "extract evidence the mood symptoms or \"depression\" started before the age of eighteen",
+            "consensus_table": {
+                "depression_prognostic_factor": "Early onset <18",
+                "domain": "Illness-related factors",
+                "odds_ratio": 2.3,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "late_illness_onset",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "The patient's mood symptoms or depression began after the age of sixty.",
+            "task": "extract evidence the mood symptoms or \"depression\" started after age of sixty",
+            "consensus_table": {
+                "depression_prognostic_factor": "Late onset >60",
+                "domain": "Illness-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "recurrent_episodes",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "The patient has experienced two or more episodes of mood symptoms or depression, or has experienced recurrent depression.",
+            "task": "extract evidence of two or more episodes of mood symptoms or \"depression\" or evidence of recurrent depression",
+            "consensus_table": {
+                "depression_prognostic_factor": "Recurrent episodes",
+                "domain": "Illness-related factors",
+                "odds_ratio": 1.5,
+                "strength_of_evidence": 1,
+                "comments": "Risk compared with single MDE"
+            },
+            "examples": []
+        },
+        {
+            "label": "episodes_severity",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "The patient's current episode of mood symptoms or depression is described as severe.",
+            "task": "extract evidence that this episode of mood symptoms or \"depression\" are \"severe\" ",
+            "consensus_table": {
+                "depression_prognostic_factor": "Severity",
+                "domain": "Illness-related factors",
+                "odds_ratio": 1.7,
+                "strength_of_evidence": 1,
+                "comments": "Greater severity"
+            },
+            "examples": []
+        },
+        {
+            "label": "multiple_hospitalizations",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "extract evidence that the patient has been hospitalised for \"depression\" or mood problems",
+            "consensus_table": {
+                "depression_prognostic_factor": "No. of hospitalizations",
+                "domain": "Illness-related factors",
+                "odds_ratio": 1.6,
+                "strength_of_evidence": 1,
+                "comments": "If more than 1 psychiatric admission"
+            },
+            "examples": []
+        },
+        {
+            "label": "suicidality",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Suicide risk",
+                "domain": "Illness-related factors",
+                "odds_ratio": 2.2,
+                "strength_of_evidence": 1,
+                "comments": "Current elevated suicidal risk as indicated by ideations"
+            },
+            "examples": []
+        },
+        {
+            "label": "episode_remission",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "extract evidence that mood or \"depression\" symptoms do not fully resolve",
+            "consensus_table": {
+                "depression_prognostic_factor": "Quality of remission",
+                "domain": "Illness-related factors",
+                "odds_ratio": 10.4,
+                "strength_of_evidence": 2,
+                "comments": "Lack of full remission"
+            },
+            "examples": []
+        },
+        {
+            "label": "anhedonia",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "extract evidence of loss of enjoyment of activities or inability to enjoy events, people or hobbies",
+            "consensus_table": {
+                "depression_prognostic_factor": "Anhedonia",
+                "domain": "Illness-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 2,
+                "comments": "Persistent anhedonia a risk for chronicity, lack of remission and relapse"
+            },
+            "examples": []
+        },
+        {
+            "label": "dysthymia",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Dysthymia",
+                "domain": "Illness-related factors",
+                "odds_ratio": 1.5,
+                "strength_of_evidence": 1,
+                "comments": "Increased risk of relapse and lack of full remission"
+            },
+            "examples": []
+        },
+        {
+            "label": "mental_comorbidity_0",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Comorbid anxiety disorder",
+                "domain": "Illness-related factors",
+                "odds_ratio": 2.6,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "mental_comorbidity_1",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Comorbid panic disorder",
+                "domain": "Illness-related factors",
+                "odds_ratio": 3.2,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "mental_comorbidity_2",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Comorbid social phobia",
+                "domain": "Illness-related factors",
+                "odds_ratio": 2.1,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "mental_comorbidity_3",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Comorbid personality disorder",
+                "domain": "Illness-related factors",
+                "odds_ratio": 1.7,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "mental_comorbidity_4",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Comorbid PTSD",
+                "domain": "Illness-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 2,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "mental_comorbidity_5",
+            "statement": "Comorbid medical illness",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "",
+                "domain": "Illness-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": "Includes endocrine disorders, diabetes (poor glycaemic control), neurological disorders, pancreatic carcinoma, connective tissue disorders, vitamin deficiency, viral infections, obesity, and coronary heart disease"
+            },
+            "examples": []
+        },
+        {
+            "label": "substance_use",
+            "domain": "ILLNESS_FACTOR",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Substance abuse",
+                "domain": "Illness-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": "Bidirectional effects - both exacerbate and maintain the other"
+            },
+            "examples": []
+        },
+        {
+            "label": "response_first_antidepressant",
+            "domain": "TREATMENT_FACTOR_MEDS",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "Substance abuse",
+                "domain": "Treatment-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": "Bidirectional effects - both exacerbate and maintain the other"
+            },
+            "examples": []
+        },
+        {
+            "label": "response_other_antidepressant",
+            "domain": "TREATMENT_FACTOR_MEDS",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "",
+                "domain": "",
+                "odds_ratio": null,
+                "strength_of_evidence": null,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "adequate_dosage",
+            "domain": "TREATMENT_FACTOR_MEDS",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "",
+                "domain": "",
+                "odds_ratio": null,
+                "strength_of_evidence": null,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "adequate_duration",
+            "domain": "TREATMENT_FACTOR_MEDS",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "",
+                "domain": "",
+                "odds_ratio": null,
+                "strength_of_evidence": null,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "tolerance_medication_side_effects",
+            "domain": "TREATMENT_FACTOR_MEDS",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "",
+                "domain": "",
+                "odds_ratio": null,
+                "strength_of_evidence": null,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "adherence_medication",
+            "domain": "TREATMENT_FACTOR_MEDS",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "",
+                "domain": "",
+                "odds_ratio": null,
+                "strength_of_evidence": null,
+                "comments": ""
+            },
+            "examples": []
+        },
+        {
+            "label": "pharmacokinetics",
+            "domain": "TREATMENT_FACTOR_MEDS",
+            "statement": "",
+            "task": "",
+            "consensus_table": {
+                "depression_prognostic_factor": "",
+                "domain": "",
+                "odds_ratio": null,
+                "strength_of_evidence": null,
+                "comments": ""
+            },
+            "examples": []
+        }
+    ]
+}
