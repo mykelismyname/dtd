@@ -1,3 +1,9 @@
 .ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
 mimic-iii-clinical-database-demo-1.4/
 mimic-iii-clinical-database-1.4/
+mimic-iii-demo-enriched/
+subject_notes/
+results/
