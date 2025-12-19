@@ -4,18 +4,18 @@ import json
 
 import torch
 from src.llm_utils import generate_text, load_llm, safe_parse_llm_json
-from src.prompt_utils import load_patient_notes, load_prompt_template, make_prompt, load_statements
+from src.prompt_utils import load_patient_notes, load_prompt_template, make_prompt, load_statements, contains_age_info
 
-MODEL_NAME = "mistralai/Mistral-7B-v0.1"
+MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
 
-FACTORS_PATH = Path("dtd_prompt_templates/depression_factors.json")
-PATIENTS_DIR = Path("mimic-iii-demo-enriched/subject_notes")
+FACTORS_PATH = Path("dtd_prompt_templates/depression_factors_age.json")
+PATIENTS_DIR = Path("subject_notes")
 PROMPT_PATH = Path("dtd_prompt_templates/ehr_classification_prompt.txt")
 
 OUT_DIR = Path("results")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-def main(max_patients: int = None, max_notes: int = None, max_new_tokens: int = 256, run_generation: bool = False):
+def main(max_patients: int = None, max_notes: int = None, max_new_tokens: int = 64, run_generation: bool = False):
 
     # Load LLM
     if run_generation:
@@ -27,6 +27,9 @@ def main(max_patients: int = None, max_notes: int = None, max_new_tokens: int = 
     else:
         tokenizer = None
         model = None
+
+    print("CUDA available:", torch.cuda.is_available())
+    print("Model device:", next(model.parameters()).device)
 
     # Load statements and prompt template
     statements = load_statements(FACTORS_PATH)
@@ -52,6 +55,15 @@ def main(max_patients: int = None, max_notes: int = None, max_new_tokens: int = 
 
         for note_id, row in df_notes.iterrows():
             ehr_text = row["TEXT"]
+
+            has_age = contains_age_info(ehr_text)
+            print(f"Age mentioned in note: {has_age}", flush=True)
+
+            TEXT_DUMP_DIR = OUT_DIR / "note_texts"
+            TEXT_DUMP_DIR.mkdir(exist_ok=True)
+
+            txt_path = TEXT_DUMP_DIR / f"subject_{subject_id}_note_{note_id}.txt"
+            txt_path.write_text(ehr_text)
 
             if not isinstance(ehr_text, str) or not ehr_text.strip():
                 continue

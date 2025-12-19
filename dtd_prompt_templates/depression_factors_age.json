@@ -1,0 +1,20 @@
+{
+    "version": "0.1",
+    "description": "DTD coding",
+    "factors": [
+        {
+            "label": "older_age",
+            "domain": "PATIENT_FACTOR",
+            "statement": "The patient is aged over 60 years.",
+            "task": "extract evidence that the patient is aged over 60 years",
+            "consensus_table": {
+                "depression_prognostic_factor": "Older age",
+                "domain": "Patient-related factors",
+                "odds_ratio": null,
+                "strength_of_evidence": 1,
+                "comments": ""
+            },
+            "examples": []
+        }
+    ]
+}
