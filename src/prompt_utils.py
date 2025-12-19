@@ -72,3 +72,20 @@ def load_statements(factors_path: Path) -> List[Dict[str, str]]:
     ]
 
     return statements
+
+def contains_age_info(text: str) -> bool:
+    t = text.lower()
+    return any(
+        kw in t
+        for kw in [
+            "age ",
+            "aged ",
+            "years old",
+            "year old",
+            "yo ",
+            "y/o",
+            "dob",
+            "date of birth",
+            "born",
+        ]
+    )
